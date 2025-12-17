@@ -1,6 +1,6 @@
-# Caught Looking
-
 ![Caught Looking Logo](public/images/caughtlooking.svg)
+
+# Caught Looking
 
 A modern web application for viewing live baseball scorecards with real-time updates and interactive features.
 
@@ -8,13 +8,13 @@ A modern web application for viewing live baseball scorecards with real-time upd
 
 ## About This Project
 
-I've always loved baseball. Something about the numbers, the stats, the data. I find keeping score by hand, in my trusty scorebook from [Numbers Game](https://www.numbersgame.co/products/scorebook-22), gets me a lot more into the games I'm watching. I sometimes have trouble keeping up though and found myself flipping between different apps, trying to figure out what happened, keep track of pitch sequences, and get it written down, all while the games were still going on in front of me.
+I've always loved baseball. Something about the numbers, the stats, the data. I find keeping score by hand, in my trusty scorebook from [Numbers Game](https://www.numbersgame.co/products/scorebook-22), gets me a lot more into the games I'm watching. I sometimes have trouble keeping up though and found myself flipping between different apps, trying to figure out what happened, keep track of pitch sequences, and get it written down, all while the game was still going on in front of me.
 
 I found [livebaseballscorecards.com](https://livebaseballscorecards.com), which is an incredible resource and proved very helpful. It wasn't quite what I needed though. It was missing a few features, it used notation I wasn't used to, it didn't use native web elements, and it wasn't quite as aesthetically pleasing as my own hand-written scorecard (no shade though, I love that site!). So I decided to make my own, which is what you see here.
 
-It follows my own notation style so some things may not be quite what you're used to. It has delay settings. I can go back in time. I can do my own scorecard then follow along here to double check things.
+It follows my own notation style so some things may not be quite what you're used to. It has delay settings and populates with lineups and other details before game time, helping me get set up. Then I can do my own scorecard then follow along here to double check things.
 
-So please try it out and enjoy it!
+So please try it out and enjoy!
 
 Built using the MLB API. Design and layout heavily influenced by Scorebook #22 from [Numbers Game](https://www.numbersgame.co/products/scorebook-22).
 
@@ -23,28 +23,24 @@ Built using the MLB API. Design and layout heavily influenced by Scorebook #22 f
 ### 🏟️ Game Browser
 
 - Browse MLB games by date with a clean, responsive interface
-- View live games.
+- Scores update in real time on game day
 
 ### 📊 Interactive Scorecards
 
 - View detailed scorecards with tooltips and intuitive notation
 - Traditional baseball scorecard format
-- Real-time play-by-play updates
-- Visual indicators for runs, hits, errors, and more
+- Pitch sequence indicators, baserunning notation, at-bat results, and hit direction available in the scorecard grid
+- More details available by hovering on or clicking an at-bat cell
+- Click the live scorebug in the bottom right to see more details on the current at-bat
+- Roster and play-by-play tabs with more stats coming soon
+- An AI_powered color commentator that sometimes works!
 
 ### 🔴 Live Updates
 
-- Real-time game updates with configurable delays
+- Real-time updates with play-by-play data directly from the MLB API
+- Configurable spoiler and delay settings (helpful if you're SN feed is sometimes 30 seconds behind MLB)
 - Auto-refresh functionality for live games
-- Configurable update intervals (0-10 minute delays)
 - Buffer management for delayed viewing
-
-### 🎛️ Customizable Controls
-
-- Adjust detail level and view mode
-- Toggle between different data displays
-- Responsive design for all devices
-- Dark/light theme support
 
 ### 📱 Modern UI/UX
 
@@ -52,6 +48,8 @@ Built using the MLB API. Design and layout heavily influenced by Scorebook #22 f
 - Fast performance with Next.js 14
 - Beautiful design with Tailwind CSS
 - Intuitive navigation and controls
+- Responsive design for all devices
+- Dark/light theme support
 
 ## How to Use
 
@@ -66,7 +64,7 @@ Built using the MLB API. Design and layout heavily influenced by Scorebook #22 f
 ### Advanced Features
 
 - **Live delay controls**: Adjust how far behind live the updates are (useful for watching with friends)
-- **Detail levels**: Choose how much information to display on scorecards
+- **Detail levels**: Choose how much information to display on scorecards (coming soon)
 - **Mobile optimization**: Full functionality on phones and tablets
 
 ## Technology Stack
@@ -82,10 +80,12 @@ Built using the MLB API. Design and layout heavily influenced by Scorebook #22 f
 
 ## Credits & Acknowledgments
 
+- Built by [**Sam Vickars**](https://samvickars.com)
+- Email [sam@caughtlooking.app](mailto:sam@caughtlooking.app) with feedback or questions.
+
 ### Data Sources
 
 - **MLB Stats API** - Official Major League Baseball data and statistics
-- **MLB.com** - Game schedules, scores, and live updates
 
 ### Libraries & Dependencies
 
@@ -105,62 +105,11 @@ Built using the MLB API. Design and layout heavily influenced by Scorebook #22 f
 - **ESLint** - Code linting and formatting
 - **PostCSS** - CSS processing and optimization
 
-## Development
-
-### Prerequisites
-
-- Node.js 18 or higher
-- npm or yarn package manager
-
-### Local Development Setup
-
-```bash
-# Clone the repository
-git clone <repository-url>
-cd baseball
-
-# Navigate to web app directory
-cd web_app
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Open browser to http://localhost:3000
-```
-
-### Available Scripts
-
-```bash
-npm run dev      # Start development server
-npm run build    # Build for production
-npm run start    # Start production server
-npm run lint     # Run ESLint
-npm run type-check # TypeScript type checking
-```
-
-## Browser Support
-
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
 ## License
 
 Copyright (c) 2025 Sam Vickars
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## Support
 
