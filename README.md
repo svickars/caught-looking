@@ -1,6 +1,6 @@
 # Caught Looking
 
-![Caught Looking Logo](web_app/public/images/caughtlooking.svg)
+![Caught Looking Logo](public/images/caughtlooking.svg)
 
 A modern web application for viewing live baseball scorecards with real-time updates and interactive features.
 
