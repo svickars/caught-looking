@@ -67,6 +67,22 @@ Built using the MLB API. Design and layout heavily influenced by Scorebook #22 f
 - **Detail levels**: Choose how much information to display on scorecards (coming soon)
 - **Mobile optimization**: Full functionality on phones and tablets
 
+## Updating Historical Manager Data
+
+Historical games (yesterday and earlier) display manager names from Retrosheet data. To refresh this data:
+
+1. **Navigate to the web app**:
+   ```bash
+   cd web_app
+   ```
+
+2. **Run the build script**:
+   ```bash
+   npm run build:historical-managers
+   ```
+
+The script downloads `teamstats.zip` and `biodata.zip` from Retrosheet, parses manager data per game, and writes `web_app/data/historical-managers.ts`. Downloaded files are cached in `web_app/.retrosheet-cache` (gitignored). Today's games use the MLB API for manager names; only historical games use this generated file.
+
 ## Technology Stack
 
 - **Frontend**: Next.js 14 with React and TypeScript
