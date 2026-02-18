@@ -32,6 +32,7 @@ Built using the MLB API. Design and layout heavily influenced by Scorebook #22 f
 - Pitch sequence indicators, baserunning notation, at-bat results, and hit direction available in the scorecard grid
 - More details available by hovering on or clicking an at-bat cell
 - Click the live scorebug in the bottom right to see more details on the current at-bat
+- **Export PDF** – Download the scorecard as a two-page landscape letter PDF (away team on page 1, home team on page 2)
 - Roster and play-by-play tabs with more stats coming soon
 - An AI_powered color commentator that sometimes works!
 
@@ -63,8 +64,10 @@ Built using the MLB API. Design and layout heavily influenced by Scorebook #22 f
 
 ### Advanced Features
 
+- **Export PDF**: On the Scorecard tab, expand the left navigation and click "Export PDF" to download the scorecard as a two-page landscape letter PDF
+- **Copy link**: Copy the game URL to clipboard (or use the native share sheet on mobile)
+- **Save chart images**: Download spray chart and pitch chart views as PNG from their respective tabs
 - **Live delay controls**: Adjust how far behind live the updates are (useful for watching with friends)
-- **Detail levels**: Choose how much information to display on scorecards (coming soon)
 - **Mobile optimization**: Full functionality on phones and tablets
 
 ## Updating Historical Manager Data
