@@ -84,7 +84,7 @@ Historical games (yesterday and earlier) display manager names from Retrosheet d
    npm run build:historical-managers
    ```
 
-The script downloads `teamstats.zip` and `biodata.zip` from Retrosheet, parses manager data per game, and writes `web_app/data/historical-managers.ts`. Downloaded files are cached in `web_app/.retrosheet-cache` (gitignored). Today's games use the MLB API for manager names; only historical games use this generated file.
+The script downloads `teamstats.zip` and `biodata.zip` from Retrosheet, parses manager data per game, and writes `web_app/data/historical-managers.ts`. Downloaded files are cached in `web_app/.retrosheet-cache` (gitignored). **Runtime logic:** prior seasons use this file only. For the **current season**, games **before today** use Retrosheet when a row exists, otherwise the MLB teams/coaches API (manager). **Today’s** games use the MLB API for manager names.
 
 ## Technology Stack
 
